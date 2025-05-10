@@ -34,8 +34,11 @@
                 `
                     <table>
                         <tr>
-                            <th>
-                            </th>
+                            <th>ID</th>
+                            <th>名前</th>
+                            <th>ユーザー名</th>
+                            <th>メール</th>
+                            <th>会社名</th>
                         </tr>
                         <tr>
                             <td>
