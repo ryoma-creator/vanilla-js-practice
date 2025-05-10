@@ -10,4 +10,15 @@
     
     // ここにコードを書いてください
 
-    
+    document.addEventListener("DOMContentLoaded", ()=>{
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response=>{
+            if(!response.ok){
+                throw new Error (`Error status is ${response.status}`)
+            }
+            return response.json();
+        })
+        .then(users=>{
+            console.log(users);
+        })
+    });
