@@ -58,6 +58,8 @@
                 </tbody>
             </table>
             `
+
+            tableElement.innerHTML = tableHTML;
         })
         .catch(error => {
             loadingElement.textContent = `error message is ${error.message}`;
