@@ -11,6 +11,12 @@
     // ここにコードを書いてください
 
     document.addEventListener("DOMContentLoaded", ()=>{
+        console.log("DOMContentLoaded");
+
+        const loadingElement = document.getElementsByClassName("loading")[0];
+        loadingElement.textContent = "";
+
+
         fetch("https://jsonplaceholder.typicode.com/users")
         .then(response=>{
             if(!response.ok){
