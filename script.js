@@ -14,7 +14,7 @@
         console.log("DOMContentLoaded");
 
         const loadingElement = document.getElementsByClassName("loading")[0];
-        const tableElement = document.getElementsById("tableContainer"); 
+        const tableElement = document.getElementById("tableContainer"); 
 
         loadingElement.textContent = "";
         
@@ -43,7 +43,7 @@
             users.forEach(user => tableHTML += 
                 `
                          <tr>    
-                            <td></td>
+                            <td>${}</td>
                             <td></td>
                             <td></td>
                             <td></td>
