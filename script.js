@@ -14,8 +14,10 @@
         console.log("DOMContentLoaded");
 
         const loadingElement = document.getElementsByClassName("loading")[0];
-        loadingElement.textContent = "";
+        const tableElement = document.getElementsById("tableContainer"); 
 
+        loadingElement.textContent = "";
+        
 
         fetch("https://jsonplaceholder.typicode.com/users")
         .then(response=>{
@@ -26,5 +28,19 @@
         })
         .then(users=>{
             console.log(users);
+
+            let tableHTML = "";
+            users.forEach(user => tableHTML += 
+                `
+                    <table>
+                        <tr>
+                            <th>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr> 
+                `);
         })
     });
