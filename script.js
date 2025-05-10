@@ -32,13 +32,16 @@
             let tableHTML = 
             `
             <table>
-            <tr>
-                <th>ID</th>
-                <th>名前</th>
-                <th>ユーザー名</th>
-                <th>メール</th>
-                <th>会社名</th>
-            </tr>       
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>名前</th>
+                        <th>ユーザー名</th>
+                        <th>メール</th>
+                        <th>会社名</th>
+                    </tr>
+                </thead>
+                <tbody>       
             `;
             users.forEach(user => tableHTML += 
                 `
@@ -50,5 +53,10 @@
                             <td>${user.company.name}</td>
                          </tr>    
                 `);
+            tableHTML += 
+            `
+                </tbody>
+            </table>
+            `
         })
     });
