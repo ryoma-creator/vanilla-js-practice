@@ -29,21 +29,26 @@
         .then(users=>{
             console.log(users);
 
-            let tableHTML = "";
+            let tableHTML = 
+            `
+            <table>
+            <tr>
+                <th>ID</th>
+                <th>名前</th>
+                <th>ユーザー名</th>
+                <th>メール</th>
+                <th>会社名</th>
+            </tr>       
+            `;
             users.forEach(user => tableHTML += 
                 `
-                    <table>
-                        <tr>
-                            <th>ID</th>
-                            <th>名前</th>
-                            <th>ユーザー名</th>
-                            <th>メール</th>
-                            <th>会社名</th>
-                        </tr>
-                        <tr>
-                            <td>
-                            </td>
-                        </tr> 
+                         <tr>    
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                         </tr>    
                 `);
         })
     });
