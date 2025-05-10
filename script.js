@@ -59,4 +59,7 @@
             </table>
             `
         })
+        .catch(error => {
+            loadingElement.textContent = `error message is ${error.message}`;
+        })
     });
