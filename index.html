@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>バニラJS練習</title>
-  <link rel="stylesheet" href="style.css">
+  <title>APIデータテーブル</title>
 </head>
 <body>
-  <div class="container">
-    <h1>ユーザーデータ取得</h1>
-    <button id="fetchButton">データを取得</button>
-    <div id="statusContainer"></div>
-    <div id="dataContainer"></div>
+  <h1>ユーザーデータテーブル</h1>
+  
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="名前で検索...">
   </div>
-  <script src="script.js"></script>
+  
+  <div id="tableContainer">
+    <!-- テーブルがここに表示されます -->
+    <p class="loading">データを読み込んでいます...</p>
+  </div>
+
 </body>
 </html>
