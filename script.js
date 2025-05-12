@@ -64,4 +64,11 @@
         .catch(error => {
             loadingElement.textContent = `error message is ${error.message}`;
         })
+
+        const inputValueElement = document.getElementById("searchInput");
+        inputValueElement.addEventListener("keyup", ()=>{
+            if(this.value){
+                const lowerCaseInputValue = this.value.toLowerCase();
+            } 
+        });
     });
