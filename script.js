@@ -66,9 +66,18 @@
         })
 
         const inputValueElement = document.getElementById("searchInput");
-        inputValueElement.addEventListener("keyup", ()=>{
-            if(this.value){
+        inputValueElement.addEventListener("keyup", function () {
+
                 const lowerCaseInputValue = this.value.toLowerCase();
-            } 
+                const trElements = tableElement.querySelectorAll("table tbody tr");
+
+                trElements.forEach(tr => {
+                    const tdUserName = tr.querySelector("td:nth-child(2)");
+                    const lowerCaseTdUserName = tdUserName.textContent.toLowerCase();
+                    lowerCaseTdUserName === lowerCaseInputValue ? 
+                        tr.style.display = ""
+                        : tr.style.display = none
+                }); 
+                    
         });
     });
