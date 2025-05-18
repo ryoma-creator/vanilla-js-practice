@@ -1,20 +1,37 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>APIデータテーブル</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data Search</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>ユーザーデータテーブル</h1>
-  
-  <div class="search-container">
-    <input type="text" id="searchInput" placeholder="名前で検索...">
+  <div class="container">
+    <h1>User Directory</h1>
+    
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search by name or email...">
+    </div>
+    
+    <div id="status"></div>
+    
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Company</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- User data will be inserted here -->
+      </tbody>
+    </table>
   </div>
-  
-  <div id="tableContainer">
-    <!-- テーブルがここに表示されます -->
-    <p class="loading">データを読み込んでいます...</p>
-  </div>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
-

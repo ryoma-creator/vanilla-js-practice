@@ -1,32 +1,45 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  padding: 8px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  th {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
-  .search-container {
-    margin-bottom: 20px;
-  }
-  #searchInput {
-    padding: 8px;
-    width: 300px;
-  }
-  .loading {
-    text-align: center;
-    padding: 20px;
-    font-style: italic;
-    color: blue;
-  }
-  .error {
-    color: red;
-    padding: 10px;
-    border: 1px solid red;
-    background-color: #ffebee;
-  }
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #0062FF;
+  color: white;
+}
+
+#status {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #0062FF;
+}
